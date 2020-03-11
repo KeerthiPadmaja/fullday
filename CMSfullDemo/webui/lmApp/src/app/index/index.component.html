@@ -1,0 +1,139 @@
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          font-family: cursive;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+       
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.centered {
+  position: absolute;
+  top: -350px;
+  left: 25px;
+}
+.contact{
+    top: 200px;
+    right:40px;
+}
+.fishes
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .fish
+    {
+      position: absolute;
+      top: 60px;
+      left: 600px;
+    }
+  </style>
+
+
+      
+        
+        <ul>
+          <li><a class="active" href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#news">NEWS</a></li>
+        </ul>
+
+  
+
+        <div class="container">
+
+<div style="position: relative; left: 0; top: 0;">
+    <img src="https://www.mccain.com/media/2556/mccain-fries-and-appetizers.jpg" class="fishes" style="width:100%;" id="home"/>
+    <img src="https://i.ibb.co/C54wZcF/Free-Sample-By-Wix.jpg" class="fish"/>
+    <div class="centered" style=" font-family: cursive;font-size: 50px;font-weight: bold;position: relative;animation: mymove 10s infinite;">Foodie Food </div>
+    
+</div>
+
+    
+    
+    <h2>
+   <button  [routerLink]="['/index',
+{outlets: {'data': ['customer-login']}}]" id="Login">Customer Login </button> &nbsp;&nbsp;&nbsp;&nbsp;
+<button  [routerLink]="['/index',
+{outlets: {'data': ['vendorlogin']}}]" id="Login">Vendor Login</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+</h2>
+
+ <router-outlet name='data'></router-outlet> 
+ <section class="w3-container w3-center w3-content" style="max-width:10000px;"><img class="about" src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:40%;" align="left" id="about"/>
+
+    <h2 class="w3-wide  w3-text-teal " style="font-family: cursive;"><br/><br/><br/><br/><br/>ABOUT</h2>
+    <p class="w3-text-purple"><i>Foodie Food</i></p>
+    <b> <p class="w3-justify" style="size:30px;font-family: cursive;text-align: right;">Food is a common neccesity of common people around.Food has to reach each and every corners hence we have bloomed with an idea of serving foods. We have created a website where you can order foods online.We act as the connector or more precisly a platform which connects the vendor with a customer.We started to serve in the year 2015.Now we are a 4 year old kid with a brain of 21 years.We started with a single branch now we have extended as rainbow,having 7 branches across TamilNadu.<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p></b>
+  </section>
+ 
+ 
+
+ <div  style="max-width:10000px;" class="contact"><img class="contact" src="https://images.pexels.com/photos/955081/pexels-photo-955081.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:50%;" align="right" id="contact"/>
+    <h2 class="w3-wide w3-text-teal " style="font-family: cursive;">CONTACT</h2>
+  <p class="w3-text-purple"><i>Foodie Food</i></p>
+   <b> <p class="w3-justify" style="size:30px;font-family: cursive;">You can contact our officials incase of facing any struggles during any of our process.Our officials and their details are </p></b>
+<b><p class="w3-justify w3-text-black" style="size:35px;font-family: cursive;">SHRIDHARAN  --- 	sridharjava@outlook.com<br/>Executive officer,Chennai <br/></p></b>
+<b><p class="w3-justify w3-text-black" style="size:35px;font-family: cursive;">SOUGATA NAG  --- 	sougatanag@outlook.com<br/>Executive officer,Coimbatore <br/></p></b>
+<b><p class="w3-justify w3-text-black" style="size:35px;font-family: cursive;">YOGESH KUMAR  --- 	yogeshtl@outlook.com<br/>Executive officer,Madurai  <br/> </p> </b>
+<b><p class="w3-justify w3-text-black" style="size:35px;font-family: cursive;">LEELA NIVASHINI  --- 	leelaniva@outlook.com<br/>Executive officer,Tirunelveli <br/> </p> </b>
+<b><p class="w3-justify w3-text-black" style="size:35px;font-family: cursive;">SIVANIE  --- 	    sivanie@outlook.com<br/>Executive officer,Salem <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> <br/> </p> </b>
+</div>
+<section class="w3-container w3-center w3-content" style="max-width:10000px;"><img class="about" src="https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:50%;" align="left" id="news"/>
+
+    <h2 class="w3-wide  w3-text-teal " style="font-family: cursive;">NEWS</h2>
+    <p class="w3-text-purple"><i>Foodie Food</i></p>
+    <b> <p class="w3-block w3-justify w3-text-pink" style="size:20px;font-family:cursive;">Coming Soon, Hygiene Ratings On Restaurant Doors: FSSAI Announces Move</p></b> 
+    <p class="w3-block w3-text-dark-grey" style="size:20px;font-family: cursive;">Sakshita Khosla | Saturday September 7, 2019</p>
+    <b> <p class="w3-justify" style="size:30px;font-family: cursive;">Coming Soon, Hygiene Ratings On Restaurant Doors: FSSAI Announces MoveThe system is likely to be in the interest of diners, as it will result in an improvement in the quality of food served. FSSAI is yet to set the guidelines for the rating.</p></b>
+    <b> <p class="w3-block w3-justify w3-text-pink" style="size:20px;font-family:cursive;">Regulatory, Industry Bodies Say Salt Brands Safe To Consume</p></b> 
+    <p class="w3-block w3-text-dark-grey" style="size:20px;font-family: cursive;">IANS | Thursday July 4, 2019</p>
+    <b> <p class="w3-justify" style="size:30px;font-family: cursive;">Regulatory, Industry Bodies Say Salt Brands Safe To ConsumeAs allegations and concerns have cropped up over the safety of major Indian salt brands, the Food Safety and Standards Authority of India (FSSAI) and the Indian Medical Association (IMA) have refuted the concerns that the major salt brands contain alarming level of potassium ferrocyanide.
+    </p></b>
+  </section>
+  <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">MLP174</a>
+    </p>
+  </footer>
+
+
+ 

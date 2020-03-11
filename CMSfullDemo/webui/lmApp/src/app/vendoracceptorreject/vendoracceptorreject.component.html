@@ -1,0 +1,17 @@
+<h4>
+<form>
+    Vendor Id : 
+    <input type="number" name="vendId" [(ngModel)]="vendId" /> <br/><br/> 
+    Order Id : 
+    <input type="number" name="orderId" [(ngModel)]="orderId" /> <br/><br/> 
+    Status:
+    <select id="status"name = "status" [(ngModel)]= "status">
+        <option value="ACCEPTED">ACCEPTED</option>
+        <option value="REJECTED">REJECTED</option>  
+      </select>
+      <br/><br/>
+    <input type="button" value="Accept or Reject Order" (click)="acceptOrReject()" /> <br/><br/>
+    {{result}}
+
+</form>
+</h4>

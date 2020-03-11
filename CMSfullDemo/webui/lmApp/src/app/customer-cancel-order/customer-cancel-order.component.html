@@ -1,0 +1,17 @@
+<h2>
+<form>
+    Customer Id:
+    <input type = "number" name = "customerId" [(ngModel)]= "customerId"/><br/><br/>
+    Order Id:
+    <input type = "number" name = "orderId" [(ngModel)]= "orderId"/><br/><br/>
+   
+    Status:
+    <select id="status"name = "status" [(ngModel)]= "status">
+        <option value="YES">YES</option>
+        <option value="NO">NO</option>  
+      </select>
+      <br/><br/>
+    <input type = "button" value = "Cancel Order" (click)="cancel()"/><br/><br/>
+     {{result}}
+    </form>
+</h2>

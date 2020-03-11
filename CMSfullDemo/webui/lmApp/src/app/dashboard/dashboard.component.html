@@ -1,0 +1,83 @@
+<div>
+<h4>
+Welcome {{userName}} 
+</h4>
+</div>
+<style>
+    .button {
+     border-radius: 4px;
+     background-color: rgb(196, 111, 159);
+     font-family: cursive;
+     border: none;
+     color: #FFFFFF;
+     text-align: center;
+     font-size: 25px;
+     padding: 10px;
+     height: 45px;
+     width: 265px;
+     box-shadow: 0 8px rgb(160, 157, 157);
+     transition: all 0.3s;
+     cursor: pointer;
+     margin: 4px;
+     transition: width 1s
+     height 5s;
+   }
+   button:hover {
+  width: 290px;
+  height: 75px
+}
+
+</style>   
+<body width = "40%" height ="60%" margin="0" background = "https://image.freepik.com/free-vector/rolling-pin-table-with-flour-vector_1441-3759.jpg"
+style="background-repeat: no-repeat" style = "background-size: 1350px">
+<app-customer-info></app-customer-info> 
+<h6> 
+<a  [routerLink]="['/dashBoard',
+{outlets: {'data': ['placeOrder']}}]">
+<button class="button"><span>Place Order </span></button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a  [routerLink]="['/dashBoard',
+{outlets: {'data': ['customerOrderHistory']}}]">
+<button class="button"><span>Order History </span></button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a  [routerLink]="['/dashBoard',
+{outlets: {'data': ['wallet']}}]">
+<button class="button"><span>Wallet </span></button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a  [routerLink]="['/dashBoard',
+{outlets: {'data': ['customerPending']}}]">
+<button class="button"><span>Customer Pending  </span></button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a  [routerLink]="['/dashBoard',
+{outlets: {'data': ['customertc']}}]">
+<button class="button" style="position: absolute;
+top: 8px;
+right: 150px;padding: 10px;
+   height: 40px;
+   width: 110px; font-size: medium; font-family: Georgia, 'Times New Roman', Times, serif; background-color:olivedrab ;"><span>T&C</span></button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+</h6>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+  .material-icons {vertical-align:-14%}
+  </style>
+  <a  [routerLink]="['/index',
+  {outlets: {'data': ['Logout']}}]">
+  <button class="Logout" style="position: absolute;
+  top: 8px;
+  right: 16px;
+  border-radius: 4px;
+   background-color: rgb(224, 15, 15);
+   font-family: cursive;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: medium;
+   padding: 10px;
+   height: 40px;
+   width: 120px;
+   box-shadow: 0 9px #999;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;">Home<i class="w3-margin-left material-icons">home</i></button></a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+ <router-outlet name='data'></router-outlet>
+ <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>><br/><br/><br/><br/><br/>

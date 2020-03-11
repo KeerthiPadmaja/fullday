@@ -1,0 +1,24 @@
+<p>
+    வணக்கம்!!Login to service happily!!
+</p>
+<h4>
+<form method="post">
+    User Name : 
+    <input type="text" style="background-color:white;margin-left:auto;margin-right:auto;display:block;margin-top:5%;margin-bottom:1%;height: 30px;
+    width: 200px;text-align: center;font-family: cursive;color: black;border-radius: 4px;
+          transition: all 0.5s;font-size: 20px; box-shadow: 0 9px rgb(231, 40, 40);"name="userName" [(ngModel)]="userName" /> <br/><br/> 
+    Password : 
+    <input  [type]="show ? 'text' : 'password'"style="background-color:white;margin-left:auto;margin-right:auto;display:block;margin-top:5%;margin-bottom:1%;height: 30px;
+    width: 200px;text-align: center;font-family: cursive;color: black;border-radius: 4px;
+          transition: all 0.5s;font-size: 20px; box-shadow: 0 9px rgb(231, 40, 40);" name="passWord" [(ngModel)]="passWord"  /> <br/><br/> 
+    <input type="checkbox" (click)="password()"> ShowPassword 
+    <br/>
+    
+    <input type="button" value="Login" (click)="validate()" />
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</form>
+</h4>
+
+<p *ngIf="count > 1">
+    <b>Invalid Credentials...</b>
+</p>
